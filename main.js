@@ -5,7 +5,7 @@ const text = document.getElementById("text");
 // に一致する要素を表す Element オブジェクトを返すよ
 
 btn.addEventListener("click", () => {
-  text.textContent = "The button has been pressed!";
+  text.textContent = "ボタンが押された時に文字が出るようにした";
 });
 // addEventListener()はEventTarget インターフェイスのメソッドで、
 // ターゲットに特定のイベントが配信されるたびに呼び出される関数を設定します。
