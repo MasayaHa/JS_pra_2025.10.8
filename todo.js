@@ -5,7 +5,9 @@ const todoList = document.getElementById("todoList");
 addBtn.addEventListener("click", () => {
   const li = document.createElement("li");
   li.textContent = todoInput.value;
-  todoList.appendChild(li);
+  if (li.textContent !== "") {
+    todoList.appendChild(li);
+  }
   todoInput.value = "";
 });
 // createElement()は、指定されたタグ名を持つ要素ノードを生成します。
